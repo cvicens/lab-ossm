@@ -1,4 +1,6 @@
-FROM quay.io/openshifthomeroom/workshop-dashboard:4.1.1
+ARG FROM_IMAGE
+
+FROM ${FROM_IMAGE}
 
 USER root
 

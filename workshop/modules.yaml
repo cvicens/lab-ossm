@@ -1,7 +1,21 @@
+config:
+  vars: 
+  - name: ocp_password
+    value: undefined
+    aliases:
+    - OCP_PASSWORD
+  - name: KUBERNETES_SERVICE_HOST
+    value: undefined
+  - name: KUBERNETES_SERVICE_PORT
+    value: undefined
+
 modules:
     intro:
       name: Workshop Overview
       exit_sign: Observability with Kiali
+    setup-environment:
+      name: Setup Environment
+      exit_sign: Start Workshop
     kiali:
       name: Observing the Service Mesh using Kiali
       exit_sign: Routing

@@ -1,5 +1,15 @@
+REGISTRY=quay.io/cvicensa
+
+OCP_PASSWORD=openshift
+
+OC_VERSION=4.4
+
 WORKSHOP_NAME=lab-ossm
-WORKSHOP_IMAGE=quay.io/thoraxe/lab-ossm:production
+WORKSHOP_VERSION=4.4
+
+WORKSHOP_NAME=lab-ossm
+#WORKSHOP_IMAGE=quay.io/thoraxe/lab-ossm:production
+
 RESOURCE_BUDGET=medium
 MAX_SESSION_AGE=3600
 IDLE_TIMEOUT=300
