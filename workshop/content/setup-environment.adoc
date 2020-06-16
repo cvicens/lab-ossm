@@ -148,6 +148,26 @@ oc create -n %username%-tutorial -f /opt/app-root/workshop/content/k8s/preferenc
 oc create -n %username%-tutorial -f /opt/app-root/workshop/content/k8s/recommendation.yaml
 ----
 
+Let's decorate the application to make it more readable from the topology view.
+
+[source,bash,role="execute"]
+----
+oc label deployment/curl app.openshift.io/runtime=load-balancer --overwrite=true && \
+oc label deployment/customer-v1 app.openshift.io/runtime=quarkus --overwrite && \
+oc label deployment/preference-v1 app.openshift.io/runtime=quarkus --overwrite && \
+oc label deployment/recommendation-v1 app.openshift.io/runtime=quarkus --overwrite && \
+oc label deployment/recommendation-v2 app.openshift.io/runtime=quarkus --overwrite && \
+oc label deployment/recommendation-v3 app.openshift.io/runtime=quarkus --overwrite && \
+oc label deployment customer-v1 app.kubernetes.io/part-of=customers --overwrite && \
+oc label deployment preference-v1 app.kubernetes.io/part-of=customers --overwrite && \
+oc label deployment recommendation-v1 app.kubernetes.io/part-of=customers --overwrite && \
+oc label deployment recommendation-v2 app.kubernetes.io/part-of=customers --overwrite && \
+oc label deployment recommendation-v3 app.kubernetes.io/part-of=customers --overwrite && \
+oc annotate deployment preference-v1 app.openshift.io/connects-to=recommendation-v1,recommendation-v2,recommendation-v3 && \
+oc annotate deployment customer-v1 app.openshift.io/connects-to=preference-v1
+----
+
+
 *_If you need to set the default project run this_*
 
 If you have already created the project you can always set it as default
