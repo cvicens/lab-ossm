@@ -8,6 +8,7 @@ modules:
   - routing
   - mtls
   - authentication
+  - authentication-sso
   - acl
   - circuit-breaking
   - rate-limiting

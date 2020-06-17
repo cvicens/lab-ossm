@@ -7,6 +7,8 @@ WORKSHOP_IMAGE=${REGISTRY}/${REGISTRY_USER_ID}/${WORKSHOP_NAME}:${WORKSHOP_VERSI
 
 SUBDOMAIN=$(oc get ingresses.config.openshift.io cluster -o jsonpath='{.spec.domain}')
 
+oc create -f ./workshop/content/k8s/ccn-sso-template.yaml -n openshift
+
 oc new-project ${PROJECT_NAME}
 
 oc new-app -n ${PROJECT_NAME} https://raw.githubusercontent.com/openshift-homeroom/workshop-spawner/7.1.0/templates/hosted-workshop-production.json \

@@ -15,7 +15,7 @@ modules:
       exit_sign: Observability with Kiali
     setup-environment:
       name: Setup Environment
-      exit_sign: Start Workshop
+      exit_sign: Observing the Service Mesh
     kiali:
       name: Observing the Service Mesh using Kiali
       exit_sign: Routing
@@ -27,6 +27,9 @@ modules:
       exit_sign: Authentication
     authentication:
       name: Authentication (JWT and RBAC)
+      exit_sign: SSO with Keycloak
+    authentication-sso:
+      name: Authentication with Keycloak
       exit_sign: ACLs
     acl:
       name: Whitelisting/Blacklisting
