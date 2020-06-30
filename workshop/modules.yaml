@@ -30,10 +30,10 @@ modules:
       exit_sign: SSO with Keycloak
     authentication-sso:
       name: Authentication with Keycloak
-      exit_sign: ACLs
-    acl:
-      name: Whitelisting/Blacklisting
       exit_sign: Circuit Breaking
+    #acl:
+    #  name: Whitelisting/Blacklisting
+    #  exit_sign: Circuit Breaking
     circuit-breaking:
       name: Retries, Timeouts and Circuit Breaking
       exit_sign: Rate Limiting

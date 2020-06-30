@@ -152,6 +152,7 @@ Let's decorate the application to make it more readable from the topology view.
 
 [source,bash,role="execute"]
 ----
+oc project %username%-tutorial && \
 oc label deployment/curl app.openshift.io/runtime=load-balancer --overwrite=true && \
 oc label deployment/customer-v1 app.openshift.io/runtime=quarkus --overwrite && \
 oc label deployment/preference-v1 app.openshift.io/runtime=quarkus --overwrite && \

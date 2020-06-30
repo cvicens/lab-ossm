@@ -9,7 +9,7 @@ modules:
   - mtls
   - authentication
   - authentication-sso
-  - acl
+#  - acl
   - circuit-breaking
   - rate-limiting
   - fault-injection
