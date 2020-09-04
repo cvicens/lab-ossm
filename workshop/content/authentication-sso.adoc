@@ -8,6 +8,7 @@ oc process \
   -p APPLICATION_NAME=keycloak \
   -p KEYCLOAK_USER=admin \
   -p KEYCLOAK_PASSWORD=admin \
+  -p NAMESPACE=%username%-tutorial \
   | oc create -n %username%-tutorial -f -
 ----
 
