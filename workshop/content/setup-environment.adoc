@@ -25,7 +25,7 @@ oc new-project %username%-smcp
 
 NOTE: Although you don’t have to do it yourself, it’s important to
 note that the OpenShift Service Mesh Operator needs to be
-https://docs.openshift.com/container-platform/4.4/service_mesh/service_mesh_install/installing-ossm.html#ossm-control-plane-deploy-operatorhub_installing-ossm[installed]
+https://docs.openshift.com/container-platform/%OC_VERSION%/service_mesh/service_mesh_install/installing-ossm.html#ossm-control-plane-deploy-operatorhub_installing-ossm[installed]
 cluster-wide (on all namespaces on the cluster), this is the default by
 the way.
 
@@ -39,7 +39,7 @@ the way.
 
 So, let’s intall the OpenShift Service Mesh Control Plane. You can find
 all the details
-https://docs.openshift.com/container-platform/4.4/service_mesh/service_mesh_install/installing-ossm.html#ossm-control-plane-deploy-operatorhub_installing-ossm[here],
+https://docs.openshift.com/container-platform/%OC_VERSION%/service_mesh/service_mesh_install/installing-ossm.html#ossm-control-plane-deploy-operatorhub_installing-ossm[here],
 but for the sake of simplicity just follow these simple steps.
 
 . Navigate to *Operators* → *Installed Operators*. If necessary, select

@@ -2,10 +2,10 @@ REGISTRY=quay.io/cvicensa
 
 OCP_PASSWORD=openshift
 
-OC_VERSION=4.4
+OC_VERSION=4.5
 
 WORKSHOP_NAME=lab-ossm
-WORKSHOP_VERSION=4.4
+WORKSHOP_VERSION=4.5
 
 WORKSHOP_NAME=lab-ossm
 #WORKSHOP_IMAGE=quay.io/thoraxe/lab-ossm:production

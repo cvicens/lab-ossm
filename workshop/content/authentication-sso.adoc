@@ -10,6 +10,8 @@ oc process \
   -p KEYCLOAK_PASSWORD=admin \
   -p NAMESPACE=%username%-tutorial \
   | oc create -n %username%-tutorial -f -
+
+oc set image deploymentconfig/keycloak keycloak=quay.io/keycloak/keycloak:10.0.1
 ----
 
 Let's decorate the deployment.
@@ -57,7 +59,7 @@ image:./images/keycloak-create-role.png[Create role]
 
 == Create a test user
 
-Go to *Users* and click on *Add user*. Give the user just and id: *jason*.
+Go to *Users* and click on *Add user*. Give the user just user name: *jason*.
 
 image:./images/keycloak-create-user.png[Create user]
 

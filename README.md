@@ -60,11 +60,11 @@ There are three main steps to getting the lab going in your cluster.
 ### Installing the Service Mesh operators and Control Plane
 
 1. Install an OpenShift 4 environment. You will need cluster-administrator access.
-1. Follow the documentation for [installing the service mesh operators](https://docs.openshift.com/container-platform/4.4/service_mesh/service_mesh_install/installing-ossm.html#installing-ossm)
+1. Follow the documentation for [installing the service mesh operators](https://docs.openshift.com/container-platform/4.5/service_mesh/service_mesh_install/installing-ossm.html#installing-ossm)
 1. Create a project called `my-smcp` where the Service Mesh control plane will be installed.
-1. Follow the documentation for [installing the service mesh control plane](https://docs.openshift.com/container-platform/4.4/service_mesh/service_mesh_install/installing-ossm.html#ossm-control-plane-deploy-operatorhub_installing-ossm) and install it into your `my-smcp` project (not `istio-system`).
+1. Follow the documentation for [installing the service mesh control plane](https://docs.openshift.com/container-platform/4.5/service_mesh/service_mesh_install/installing-ossm.html#ossm-control-plane-deploy-operatorhub_installing-ossm) and install it into your `my-smcp` project (not `istio-system`).
 1. While you are waiting for the control plane to install, create a new project called `my-tutorial`.
-1. Follow the documentation for [creating the member role](https://docs.openshift.com/container-platform/4.4/service_mesh/service_mesh_install/installing-ossm.html#ossm-member-roll-create-console_installing-ossm) being sure to use the project you created (`my-tutorial`) and to do so *inside* the `my-smcp` project.
+1. Follow the documentation for [creating the member role](https://docs.openshift.com/container-platform/4.5/service_mesh/service_mesh_install/installing-ossm.html#ossm-member-roll-create-console_installing-ossm) being sure to use the project you created (`my-tutorial`) and to do so *inside* the `my-smcp` project.
 
 Wait for the above steps to complete before continuing. You can track the
 progress of the Service Mesh control plane installation by looking at the
